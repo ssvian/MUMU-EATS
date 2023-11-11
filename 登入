@@ -1,0 +1,64 @@
+public class MainActivity extends AppCompatActivity {
+
+
+
+    FirebaseAuth hh ;
+    Activity context = this ;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.mainactivity);
+        EditText id = findViewById(R.id.editTextTextPassword);
+        EditText password = findViewById(R.id.editTextTextPassword2);
+
+        Button enter = findViewById(R.id.button);
+        Button sigup = findViewById(R.id.button2);
+
+        hh = FirebaseAuth.getInstance() ;
+
+
+        enter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               String id1 = id.getText().toString();
+               String p1 = password.getText().toString();
+
+               if (TextUtils.isEmpty(id1) || TextUtils.isEmpty(p1)) {
+                   Toast.makeText(MainActivity.this, "帳號或密碼為空!", Toast.LENGTH_SHORT).show();
+               }else {
+                   hh.signInWithEmailAndPassword(id1,p1).addOnCompleteListener(context, new OnCompleteListener<AuthResult>() {
+                       @Override
+                       public void onComplete(@NonNull Task<AuthResult> task) {
+
+
+                           if (task.isSuccessful()){
+                               FirebaseUser user = hh.getCurrentUser() ;
+                               Toast.makeText(MainActivity.this, "登入成功! 歡迎" + user.getEmail(), Toast.LENGTH_SHORT).show();
+                               Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                               startActivity(intent);
+                           }  else {
+                               Toast.makeText(MainActivity.this, "帳號或密碼輸入錯誤!", Toast.LENGTH_SHORT).show();
+                           }
+                       }
+                   });
+               }
+
+
+
+
+            }
+
+        });
+
+        sigup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity_sigup.class);
+                startActivity(intent);
+            }
+        });
+
+
+    }
+}
