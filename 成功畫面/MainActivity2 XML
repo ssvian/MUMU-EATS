@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2D5CF">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#CCB9AA">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="320dp"
+            android:background="#CCB9AA"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ss"
+            tools:srcCompat="@drawable/ss" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-280dp"
+            android:layout_marginTop="10dp"
+            android:text="MUMU"
+            android:textColor="#B95756"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MUMU，源於創始人\n對無人商店的熱情，這個品牌\n始於一個革新的夢想。"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="#8B7F8B"
+            android:layout_marginStart="-5dp"
+            android:layout_marginEnd="80dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="80dp"
+            android:text="商品資訊"
+            android:textSize="20dp"
+            android:backgroundTint="#EC8F3F"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="掃描商品"
+            android:textSize="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#BB6F32"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/mucola"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="-200dp"
+            android:layout_marginEnd="50dp"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-260dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:text="聯絡資訊 : \ntyps47758@gmail.com\n臺中市霧峰區吉峰東路168號"
+            android:textSize="15dp"
+            android:textColor="#7D6252"/>
+    </TableRow>
+
+</TableLayout>
