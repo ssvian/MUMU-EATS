@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4EBE4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#E6C786">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/ss"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+
+                    android:text="商品資訊"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="218dp"
+                    android:layout_height="306dp"
+                    android:layout_marginTop="0dp"
+                    app:srcCompat="@drawable/cola2" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:text="肥宅快樂水"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-155dp"
+                    android:textColor="#0F2C18"
+                    android:layout_marginTop="30dp"
+                    android:text="$25"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-40dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/shape_hushtag"
+                    android:text="#Real Magic"
+                    android:textSize="10dp"
+                    android:textColor="#996430" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:background="@drawable/shape_line"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="219dp"
+                    android:layout_height="247dp"
+                    app:srcCompat="@drawable/lays" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+
+                    android:text="沙發馬鈴薯"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-125dp"
+                    android:textColor="#0F2C18"
+                    android:layout_marginTop="15dp"
+                    android:text="$35"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#No one can eat just one."
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="-40dp"
+                    android:textColor="#996430"
+                    android:textSize="10dp"
+                    android:background="@drawable/shape_hushtag"/>
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:background="@drawable/shape_line"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="219dp"
+                    android:layout_height="268dp"
+                    app:srcCompat="@drawable/noodles" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+
+                    android:text="海海來一客"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#來一客，美味就在這一刻"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="-125dp"
+                    android:textColor="#996430"
+                    android:textSize="10dp"
+                    android:background="@drawable/shape_hushtag" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-125dp"
+                    android:textColor="#0F2C18"
+                    android:layout_marginTop="10dp"
+                    android:text="$35"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:background="@drawable/shape_line"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="216dp"
+                    android:layout_height="237dp"
+                    app:srcCompat="@drawable/tea" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+
+                    android:text="麥香紅茶"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-100dp"
+                    android:textColor="#0F2C18"
+                    android:layout_marginTop="25dp"
+                    android:text="$15"
+                    android:textSize="20dp"  />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#熟悉的麥香最對味"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="-35dp"
+                    android:textColor="#996430"
+                    android:textSize="10dp"
+                    android:background="@drawable/shape_hushtag"/>
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:background="@drawable/shape_line"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="216dp"
+                    android:layout_height="309dp"
+                    app:srcCompat="@drawable/toeletpaper" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+
+                    android:text="好好用衛生紙"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp"  />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-150dp"
+                    android:textColor="#0F2C18"
+                   android:layout_marginTop="-10dp"
+                    android:text="$30"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#給你滿滿安全感"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="-35dp"
+                    android:textColor="#996430"
+                    android:textSize="10dp"
+                    android:background="@drawable/shape_hushtag" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:background="@drawable/shape_line"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="209dp"
+                    android:layout_height="189dp"
+                    app:srcCompat="@drawable/twix" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="黑皮巧克力"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-125dp"
+                    android:textColor="#0F2C18"
+                    android:layout_marginTop="50dp"
+                    android:text="$35"
+                    android:textSize="20dp"  />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Be better for your life"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="-35dp"
+                    android:textColor="#996430"
+                    android:textSize="10dp"
+                    android:background="@drawable/shape_hushtag"/>
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:background="@drawable/shape_line"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="209dp"
+                    android:layout_height="233dp"
+                    app:srcCompat="@drawable/wipes" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="抗菌濕紙巾"
+                    android:textColor="#0F2C18"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-125dp"
+                    android:textColor="#0F2C18"
+                    android:layout_marginTop="30dp"
+                    android:text="$45"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#乾加濕 更乾淨"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="-35dp"
+                    android:textColor="#996430"
+                    android:textSize="10dp"
+                    android:background="@drawable/shape_hushtag" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
