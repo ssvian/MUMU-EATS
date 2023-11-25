@@ -4,7 +4,7 @@
     tools:ignore="ExtraText">
 
     <uses-feature
-        android:name="android.hardware.camera"
+        android:name="android.hardware.camera" //開啟相機功能
         android:required="false" />
     <uses-permission android:name="android.permission.CAMERA" />
 
