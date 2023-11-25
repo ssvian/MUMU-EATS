@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         Button enter = findViewById(R.id.button);
         Button sigup = findViewById(R.id.button2);
 
-        hh = FirebaseAuth.getInstance() ;
+        hh = FirebaseAuth.getInstance() ;  //運用google firebase做基礎的資料庫
 
 
         enter.setOnClickListener(new View.OnClickListener() {
@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
                String id1 = id.getText().toString();
                String p1 = password.getText().toString();
 
-               if (TextUtils.isEmpty(id1) || TextUtils.isEmpty(p1)) {
+               if (TextUtils.isEmpty(id1) || TextUtils.isEmpty(p1)) {. 
+
+
                    Toast.makeText(MainActivity.this, "帳號或密碼為空!", Toast.LENGTH_SHORT).show();
                }else {
                    hh.signInWithEmailAndPassword(id1,p1).addOnCompleteListener(context, new OnCompleteListener<AuthResult>() {
@@ -32,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
                        public void onComplete(@NonNull Task<AuthResult> task) {
 
 
-                           if (task.isSuccessful()){
-                               FirebaseUser user = hh.getCurrentUser() ;
+                           if (task.isSuccessful()){ //利用if else判斷登入是否成功
+                               FirebaseUser user = hh.getCurrentUser() ; //利用firebase user得到輸入的值
                                Toast.makeText(MainActivity.this, "登入成功! 歡迎" + user.getEmail(), Toast.LENGTH_SHORT).show();
-                               Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                               Intent intent = new Intent(MainActivity.this, MainActivity2.class); //成功後轉跳介面
                                startActivity(intent);
                            }  else {
                                Toast.makeText(MainActivity.this, "帳號或密碼輸入錯誤!", Toast.LENGTH_SHORT).show();
