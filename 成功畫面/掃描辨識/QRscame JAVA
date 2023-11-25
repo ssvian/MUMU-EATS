@@ -41,11 +41,11 @@ public class QRscame extends AppCompatActivity  {
         // 取得相機權限
         getPermissionCamera();
 
-        surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
+        surfaceView = (SurfaceView) findViewById(R.id.surfaceView);  //能夠繪製圖型的空間
         textView = (TextView) findViewById(R.id.textView);
         ImageButton entt = (ImageButton) findViewById(R.id.imageButton3) ;
 
-        BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(this)
+        BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(this) //宣告典型的條碼function
                 .setBarcodeFormats(Barcode.QR_CODE).build();
 
         entt.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +79,7 @@ public class QRscame extends AppCompatActivity  {
             }
         });
 
-        cameraSource = new CameraSource.Builder(this, barcodeDetector)
+        cameraSource = new CameraSource.Builder(this, barcodeDetector) //UI介面開啟相機後的介面大小
 //                .setRequestedPreviewSize(300, 300) // 設定預覽視窗大小
                 .setAutoFocusEnabled(true) // 自動對焦
                 .build();
