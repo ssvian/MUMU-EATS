@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="#F4EBE4">
 
-    <ScrollView
+    <ScrollView //ScrollView為典型的滑動頁面效果
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
