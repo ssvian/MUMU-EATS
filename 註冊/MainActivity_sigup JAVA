@@ -44,16 +44,16 @@ public class MainActivity_sigup extends AppCompatActivity {
                 String userpassword = password.getText().toString();
 
 
-                if (TextUtils.isEmpty(userid) || TextUtils.isEmpty(userpassword)) {
+                if (TextUtils.isEmpty(userid) || TextUtils.isEmpty(userpassword)) { //判斷是否為空
                     Toast.makeText(MainActivity_sigup.this, "帳號或密碼為空!", Toast.LENGTH_SHORT).show();
                 }else {
                     hh.createUserWithEmailAndPassword(userid,userpassword).addOnCompleteListener(context, new OnCompleteListener<AuthResult>() {
                         @Override
 
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (isValidEmail(userid) && isValidPassword(userpassword)) {
+                                    if (isValidEmail(userid) && isValidPassword(userpassword)) { //判斷是否為電子郵件格式
 
-                                        if (task.isSuccessful()) {
+                                        if (task.isSuccessful()) { //判斷是否存檔成功
                                             FirebaseUser user = hh.getCurrentUser() ;
                                             Toast.makeText(MainActivity_sigup.this, "註冊成功!!!", Toast.LENGTH_SHORT).show();
                                             Intent intent = new Intent(MainActivity_sigup.this, MainActivity.class);
@@ -81,7 +81,7 @@ public class MainActivity_sigup extends AppCompatActivity {
 
             }
 
-            private boolean isValidEmail(String email) {
+            private boolean isValidEmail(String email) { //建立Email function
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
                 if (email.matches(emailPattern)) {
                     return true ;
@@ -89,7 +89,7 @@ public class MainActivity_sigup extends AppCompatActivity {
                 return false;
             }
 
-            private boolean isValidPassword(String ispassword) {
+            private boolean isValidPassword(String ispassword) { //建立特定密碼 function
                 String PasswordPattern =  "^(?=.*[A-Za-z])(?=.*\\d).+$";
                 if (ispassword.matches(PasswordPattern)) {
                     return true ;
