@@ -100,7 +100,7 @@
         android:layout_height="match_parent" >
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/editTextTextPassword2" //利用EdiText得到輸入的值
             android:layout_width="144dp"
             android:layout_height="match_parent"
             android:layout_marginStart="70dp"
@@ -115,7 +115,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button2" //button為進行跳轉介面的按鍵
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="70dp"
